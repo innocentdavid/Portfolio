@@ -8,7 +8,7 @@ const Home = () => {
   console.log(pathname);
   return (
     <motion.div
-      className="flex flex-col-reverse lg:flex-row justify-between items-center xl:p-16 2xl:p-28 gap-x-4 bg-[#1A1818] w-full h-screen md:h-full text-white px-10 py-10"
+      className="flex flex-col-reverse lg:flex-row justify-center md:justify-between items-center xl:p-16 2xl:p-28 gap-x-4 bg-[#1A1818] w-full h-screen md:h-full text-white px-10 py-10"
       initial={{ y: "100%" }}
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}
