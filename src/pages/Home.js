@@ -11,7 +11,7 @@ const Home = () => {
       {/*flex flex-row gap-x-16 pl-36 h-[100vh]*/}
       {/*flex flex-col text-7xl xl:text-8xl 2xl:text-9xl gap-y-2 font-prata font-thin justify-center h-full*/}
       <div className="flex flex-col md:flex-row items-center box-border p-16 2xl:p-28 justify-center md:justify-between w-full h-screen">
-        <div className="flex flex-col gap-10 md:gap-1 mt-16 md:mt-0 text-[2rem] md:text-sevenxl 2xl:text-xxl font-prata font-thin justify-center h-full leading-small">
+        <div className="flex flex-col gap-3 md:gap-1 mt-16 md:mt-0 text-[2rem] md:text-sevenxl 2xl:text-xxl font-prata font-thin justify-center h-full leading-small">
           <Link to="/Projects">
             <span className="font-thin hover:italic hover:translate-x-2 duration-500">
               PROJECTS
