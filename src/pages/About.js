@@ -7,17 +7,17 @@ const About = () => {
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}
    >
-      <div className="container mx-auto flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
-          <div className="max-h-96 md:h-screen">
-            <motion.p className='font-nanum font-thin text-lxl pl-24 pt-10'
+      <div className="container mx-auto flex flex-col justify-center items-center p-3 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 max-h-screen gap-20">
+          <div className="lg:max-h-96 ">
+            <motion.p className='font-nanum font-thin text-[5rem] md:text-lxl lg:pl-24 pt-5 md:pt-10'
             initial={{ y: "-200%"}}
             animate={{ y: 0 , transition: {delay: .6}}}>
               안녕하세요.
             </motion.p> 
           </div>
           <div className="flex bg-off-white">
-            <div className="mb-auto mt-auto max-w-lg">
+            <div className="lg:my-auto max-w-lg">
               <h1 className="text-3xl font-semibold uppercase">Dohyeong Kim</h1>
               <hr className="h-px w-32 bg-gray-200 border-0 dark:bg-gray-700"/>
               <p className="font-thin mb-5">"Front-End Developer"</p>
@@ -30,10 +30,16 @@ const About = () => {
             </div>
           </div>
         </div>
-        <motion.div className='absolute bottom-0 -right-80 pb-28 font-prata font-thin text-lxl'
+        {/* <motion.div className='absolute bottom-0 -right-30 pb-28 font-prata font-thin text-lxl'
         initial={{ y: "100%"}}
         animate={{ y: 0 , transition: {delay: .6}}}
-        >Hello.</motion.div>
+        >Hello.</motion.div> */}
+        <div className="flex flex-end">
+          <motion.div className='font-prata font-thin text-lxl'
+          initial={{ y: "100%"}}
+          animate={{ y: 0 , transition: {delay: .6}}}
+          >Hello.</motion.div>
+        </div>
       </div>
       
     </motion.div>
