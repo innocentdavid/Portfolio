@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </a>
       </div>
-      <div className="font-open_sans tracking-widest md:w-8/12 lg:w-4/12 !mx-auto pr-10 lg:mr-16 mt-28 mb-20 lg:my-0">
+      <div className="font-open_sans tracking-widest md:w-[52%] lg:w-4/12 !mx-auto pr-10 lg:mr-16 mt-28 mb-20 lg:my-0">
         <p className="font-open_sans font-semibold uppercase tracking-widest">
           "PROJECTS"
         </p>
