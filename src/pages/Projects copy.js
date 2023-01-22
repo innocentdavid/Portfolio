@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { useLocation } from "react-router-dom";
@@ -13,7 +13,7 @@ const Home = () => {
       animate={{ y: 0, transition: { duration: 0.5 } }}
       exit={{ y: window.innerHeight }}
     >
-      <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center xl:p-16 2xl:p-28 gap-x-4 bg-[#1A1818] w-full min-h-screen h-full overflow-auto text-white px-10 !pr-16 py-10">
+      <div className="flex flex-col md:flex-row items-center box-border p-16 2xl:p-28 justify-center md:justify-between w-full h-screen">
         <div className="flex flex-col gap-y-2 md:mx-28 font-prata font-thin mb-28">
           <a href="https://github.com/Doh1024/Maze-solver">
             <div className="flex flex-col">
@@ -76,7 +76,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <RightNavbar /> */}
     </motion.div>
   );
 };
